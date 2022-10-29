@@ -344,7 +344,7 @@
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-container">
-          <div>
+          <div class="footer-first-container">
             <a class="logo link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
             <address class="address">
               <ul class="footer-list-link">
@@ -421,9 +421,9 @@
             <use class="close-svg" href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="contact-form">
-          <label for="name" class="form-label">Ім'я</label>
+          <label for="name" class="form-label-name">Ім'я</label>
           <div class="form-field">
             <input class="form-input" type="text" name="name" id="name" />
             <svg class="form-icon" width="12" height="12">
@@ -437,9 +437,9 @@
               <use href="./images/icons.svg#icon-form2"></use>
             </svg>
           </div>
-          <label for="email" class="form-label">Пошта</label>
+          <label for="email-form" class="form-label">Пошта</label>
           <div class="form-field">
-            <input class="form-input" type="email" name="email" id="email" />
+            <input class="form-input" type="email" name="email" id="email-form" />
             <svg class="form-icon" width="12" height="12">
               <use href="./images/icons.svg#icon-form3"></use>
             </svg>
@@ -452,23 +452,21 @@
             rows="10"
             placeholder="Введіть текст"
           ></textarea>
-          <div class="checkbox">
-            <label class="form-agreement" for="form-agreement">
-              <input
-                class="checkbox-input"
-                type="checkbox"
-                name="form-agreement"
-                id="form-agreement"
-              />
-              <span class="checkbox-icon">
-                <svg class="check-icon" width="12" height="12">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              Погоджуюся з розсилкою та приймаю
-              <a href="#"><span class="agreement">Умови договору</span></a>
-            </label>
-          </div>
+          <label class="form-agreement" for="form-agreement">
+            <input
+              class="checkbox-input"
+              type="checkbox"
+              name="form-agreement"
+              id="form-agreement"
+            />
+            <span class="checkbox-icon">
+              <svg class="check-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            Погоджуюся з розсилкою та приймаю
+            <a href="#"><span class="agreement">Умови договору</span></a>
+          </label>
           <button class="button-form" type="submit">Відправити</button>
         </form>
       </div>
